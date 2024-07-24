@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Note Taker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Advanced Note Taker</h1>
+        <button id="login-btn">Login</button>
+        <button id="logout-btn" style="display: none;">Logout</button>
+    </header>
+    <main>
+        <section id="notes">
+            <h2>Notes</h2>
+            <input id="search-input" type="search" placeholder="Search notes...">
+            <ul id="note-list"></ul>
+            <button id="new-note-btn">New Note</button>
+        </section>
+        <section id="note-editor" style="display: none;">
+            <h2>Edit Note</h2>
+            <input id="note-title" type="text" placeholder="Note title...">
+            <textarea id="note-content" placeholder="Note content..."></textarea>
+            <select id="note-tag">
+                <option value="">Select a tag...</option>
+                <option value="personal">Personal</option>
+                <option value="work">Work</option>
+                <option value="study">Study</option>
+            </select>
+            <button id="save-note-btn">Save Note</button>
+            <button id="delete-note-btn">Delete Note</button>
+        </section>
+    </main>
+    <script src="https://cdn.firebase.com/libs/firebasejs/8.2.1/firebase.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
